@@ -1,0 +1,38 @@
+
+.line-cont{
+	overflow: hidden;
+}
+.line-box{
+	overflow: hidden;
+	background: #f4f4f4;
+}
+.box-cont{
+	position: relative;
+	width: 50%;
+	height: 300rpx;
+	float: left;
+}
+.line-img image{
+	width: 380rpx;
+	height:340rpx;
+}
+.line-text{
+	width: 40%;
+	padding:20rpx 5%;
+}
+.line-title{
+	font-size: 40rpx;
+	color:#eb6100;
+}
+.line-seq{
+	position: absolute;
+	bottom: 20rpx;
+	font-size: 100rpx;
+	color: #e6e2e0;
+}
+.seq-right{
+	right: 40rpx;
+}
+.seq-left{
+	left: 40rpx;
+}

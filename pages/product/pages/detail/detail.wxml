@@ -1,0 +1,30 @@
+<view class="product-detail">
+  <!--产品信息-->
+  <view id="{{proInfo.id}}" class='product-info' bindtap='collect'>
+    <view class='info-img'>
+      <image src='../resource/img01.png' mode='widthFix'></image>
+    </view>
+    <view class='info-cont'>
+      <view>{{proInfo.productName}}</view>
+      <view>{{proInfo.productModel}}</view>
+      <view class='product-tag'>
+        <image class='tag-icon' mode='widthFix' src='{{proInfo.platformImg}}'></image>
+        <view class='tag-text'>{{proInfo.platformName}}</view>
+      </view>
+      <view class='info-collect'>
+        <image src='{{proInfo.collectImg}}' mode='widthFix'></image>
+      </view>
+    </view>
+  </view>
+  <!--产品指南-->
+  <view class='product-guide'>
+    <block wx:for="{{guide}}">
+      <navigator class="product-list" url='{{item.guideUrl}}' hover-class="navigator-hover">
+        <view class="product-text">{{item.name}}</view>
+        <view class="product-arrow">
+          <image src='../resource/right-arrow.png'></image>
+        </view>
+      </navigator>
+    </block>
+  </view>
+</view>

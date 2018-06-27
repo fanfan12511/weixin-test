@@ -1,0 +1,42 @@
+<view class='product-list'>
+  <!--全部平台-->
+  <view class='list-top'>
+    <view id='{{list01.id}}' class='list-top-title' bindtap='platform'>
+      <view class='title-cont'>
+        <view class='title-name'>{{list01.name}}</view>
+        <image class='title-icon' src='../resource/arrow-down.png'></image>
+      </view>
+    </view>
+    <!--弹层-->
+    <view class='list-top-cont {{list01.open ? "active" : "" }}'>
+      <view class='top-cont'>
+        <view class='top-box'>
+          <block wx:for="{{platform}}">
+            <view class='top-box-list'>
+              <image class='top-box-img' mode='widthFix' src='{{item.imgurl}}'></image>
+              <view class='top-box-text'>{{item.name}}</view>
+            </view>
+          </block>
+        </view>
+        <button class='top-box-btn'>确定</button>
+      </view>
+    </view>
+  </view>
+  <!--商品列表-->
+  <view class='list-product-box'>
+    <block wx:for="{{product}}">
+      <navigator class='product-li' url='../detail/detail'>
+        <view class='product-tag'>
+          <image class='tag-icon' mode='widthFix' src='{{item.platformImg}}'></image>
+          <view class='tag-text'>{{item.platformName}}</view>
+        </view>
+        <view class='product-cont'>
+          <image class='product-img' mode='widthFix' src='{{item.productUrl}}'></image>
+          <view class='product-name'>{{item.productName}}</view>
+          <view class='product-model'>{{item.productModel}}</view>
+        </view>
+      </navigator>
+    </block>
+  </view>
+
+</view>

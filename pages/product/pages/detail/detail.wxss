@@ -1,0 +1,95 @@
+.product-detail{
+  overflow: hidden;
+  width: 100%;
+  background: #f5f5f5;
+}
+.product-info{
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  padding: 40rpx;
+}
+.info-img{
+  float: left;
+  width: 50%;
+}
+.info-img image{
+  display: block;
+  width: 70%;
+  margin: 0 auto
+}
+.info-cont{
+  float: left;
+  width: 50%;
+}
+.info-cont>view{
+  padding-bottom: 20rpx;
+}
+.product-tag{
+  overflow: hidden
+}
+.product-tag image{
+  display: block;
+  width: 60rpx;
+  float: left;
+  margin-right: 20rpx;
+}
+.product-tag .tag-text{
+  float: left;
+}
+.info-collect{
+  position: absolute;
+  top: 30rpx;
+  right: 30rpx;
+}
+.info-collect image{
+  display: block;
+  width: 70rpx;
+}
+.product-box{
+  overflow: hidden;
+  padding-top: 20rpx;
+
+}
+.product-guide{
+	margin: 20rpx 0;
+}
+.product-list{
+	position: relative;
+	overflow: hidden;
+	background: #fff;
+	padding: 40rpx;
+	font-size: 30rpx;
+  margin-bottom: 20rpx;
+}
+.product-guide view{
+	float: left
+}
+.product-icon{
+	position: absolute;
+	left: 40rpx;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 60rpx;
+	height: 60rpx;
+}
+.product-icon image{
+	width: 60rpx;
+	height: 60rpx;
+}
+.product-text{
+	line-height: 60rpx;
+	padding: 0 30rpx;
+}
+.product-arrow{
+	position: absolute;
+	right: 40rpx;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 40rpx;
+	height: 40rpx;
+}
+.product-arrow image{
+	width: 40rpx;
+	height: 40rpx;
+}

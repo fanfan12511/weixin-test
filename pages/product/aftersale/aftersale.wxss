@@ -1,0 +1,41 @@
+.after-cont{
+	overflow: hidden;
+	text-align: center;
+	font-size: 28rpx;
+	margin-bottom: 50rpx;
+}
+.service-img{
+	display: block;
+	margin: 0 auto;
+}
+.service-top .service-img{
+	width: 60rpx;
+	height: 60rpx;
+}
+.service-midd .service-img{
+	width: 60rpx;
+	height: 55rpx;
+}
+.service-bott .service-img{
+	width: 70rpx;
+	height: 50rpx;
+}
+.service-midd navigator{
+	font-size: 50rpx;
+}
+.after-cont navigator{
+	font-weight: bold;
+	margin: 20rpx 0;
+}
+.service-midd{
+	margin:80rpx 0;
+}
+.qr-code-img{
+	display: block;
+	width: 240rpx;
+	height: 240rpx;
+	margin: 20rpx auto;
+}
+.service-text{
+	color:#666;
+}

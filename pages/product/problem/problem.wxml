@@ -1,0 +1,20 @@
+<import src="../common/title.wxml" />
+
+<view class='problem-cont'>
+  <template is="title" data="{{name: '常见问题',iconImg:'../../../image/icon_title1.png'}}" />
+  <!--常见问题内容-->
+  <view class='problem-box'>
+    <block wx:for="{{list04}}">
+      <view id="{{item.id}}" class="problem-list {{item.open ? 'on' : ''}}" bindtap='viewAnswer'>
+        <view class='list-box'>
+          <view class='list-left'>{{item.name}}</view>
+          <view class='list-text'>{{item.problem}}</view>
+          <view class='list-icon'></view>
+        </view>
+        <view class='answer-cont'>
+          <view>{{item.answer}}</view>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>

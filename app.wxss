@@ -1,0 +1,39 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+page{
+  height: 100%;
+  background: #f6f6f6;
+}
+/*标题*/
+.title-head{
+  padding: 40rpx;
+}
+.title-bottom{
+  position: relative;
+  margin-top: 40rpx;
+}
+.title-name{
+  text-align: center;
+	font-weight: bold;
+}
+.title-icon{
+  display: block;
+  width: 50rpx;
+  height:50rpx;
+  margin: 0 auto;
+}
+ .title-line{
+	width: 100%;
+  height: 4rpx;
+ 	position: absolute;
+	top: 20rpx;
+}
+

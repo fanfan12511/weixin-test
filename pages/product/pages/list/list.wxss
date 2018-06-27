@@ -1,0 +1,131 @@
+.product-list{
+	position:absolute;
+	overflow: hidden;
+  width: 100%;
+	background: #f5f5f5;
+}
+.list-top{
+	position:relative;
+	overflow: hidden;
+	top: 0;
+	width: 100%;
+	padding-top: 30rpx;
+	background: #fff;
+}
+.list-top-title{
+	position: relative;
+	overflow: hidden;
+	border-bottom: 2rpx solid #ccc;
+	padding: 20rpx;
+	height: 50rpx;
+}
+.title-cont{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	line-height: 50rpx;
+}
+.title-name{
+	float:left;
+	height: 50rpx;
+	margin-right: 20rpx;
+}
+.title-icon{
+	display: block;
+	width: 50rpx;
+	height: 50rpx;
+}
+/*顶部弹窗*/
+.list-top .active{
+  display: block
+}
+.list-top-cont{
+  display: none;
+	position: fixed;
+  z-index: 10;
+	top:130rpx;
+	width:100%;
+	height: 100%;
+	overflow: hidden;
+	background: rgba(200, 200, 200, 0.6)
+}
+.top-cont{
+	background: #fff;
+  overflow: hidden;
+  padding-bottom: 40rpx;
+}
+.top-box{
+  z-index: 101;
+	overflow: hidden;
+	padding: 20rpx;
+
+}
+.top-box .top-box-list{
+	float: left;
+	width: 33%;
+  height: 180rpx;
+	margin-bottom: 40rpx;
+}
+.top-box .top-box-img{
+	display: block;
+	margin: 0 auto;
+	width: 120rpx;
+}
+.top-box-text{
+	text-align: center
+}
+.top-box-btn{
+	background: #eb6100;
+	color:#fff;
+  margin: 0 20rpx;
+}
+
+/*商品列表*/
+.list-product-box{
+	overflow: hidden;
+	width:100%;
+  height: 100%;
+}
+.product-li{
+	position: relative;
+	width: 46%;
+	overflow: hidden;
+	margin: 20rpx 2%;
+	background: #fff;
+	border-radius: 20rpx;
+	padding: 100rpx 0;
+	float: left;
+}
+.product-tag{
+	position: absolute;
+  z-index: 1;
+	right: 20rpx;
+	top: 20rpx;
+	height: 60rpx;
+	line-height: 50rpx;
+	font-size: 30rpx;
+}
+.tag-icon{
+	display: block;
+	float: left;
+	width: 50rpx;
+	margin-right: 10rpx;
+}
+.tag-text{
+	float: left;
+	color:#666;
+}
+.product-cont{
+	text-align: center
+}
+.product-img{
+	width:50%;
+	display: block;
+	margin: 0 auto;
+}
+.product-name{
+		padding: 20rpx 0;
+}
+.product-model{
+	color:#666;
+}

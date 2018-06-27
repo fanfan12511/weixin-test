@@ -1,0 +1,47 @@
+.my-manual{
+  padding: 30rpx;
+}
+.product-info{
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  padding: 40rpx;
+  margin-bottom: 30rpx;
+}
+.info-img{
+  float: left;
+  width: 50%;
+}
+.info-img image{
+  display: block;
+  width: 70%;
+  margin: 0 auto
+}
+.info-cont{
+  float: left;
+  width: 50%;
+}
+.info-cont>view{
+  padding-bottom: 20rpx;
+}
+.product-tag{
+  overflow: hidden
+}
+.product-tag image{
+  display: block;
+  width: 60rpx;
+  float: left;
+  margin-right: 20rpx;
+}
+.product-tag .tag-text{
+  float: left;
+}
+.info-collect{
+  position: absolute;
+  top: 30rpx;
+  right: 30rpx;
+}
+.info-collect image{
+  display: block;
+  width: 70rpx;
+}

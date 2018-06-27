@@ -1,0 +1,66 @@
+.problem-cont{
+	overflow: hidden;
+	background: #f4f4f4;
+	padding-bottom: 30rpx;
+}
+.problem-box{
+	padding: 0 30rpx;
+}
+
+.problem-list{
+	background: #fff;
+	padding:30rpx 8rpx;
+	margin-bottom: 10rpx;
+	overflow: hidden;
+	font-size: 26rpx;
+}
+.list-box{
+	position: relative;
+	overflow: hidden;
+	padding: 0 60rpx;
+}
+.list-box view{
+	float: left;
+
+}
+.list-left{
+	position: absolute;
+	left: 0;
+	top:50%;
+	transform:translateY(-50%);
+	color:#f26521
+}
+.list-text{
+	color:#555;
+}
+.list-icon{
+	position: absolute;
+	right: 0;
+	top:50%;
+	transform:translateY(-50%);
+	width: 30rpx;
+	height: 30rpx;
+	background: url('http://product.joyoung.com/explain/assets/static/images/product/open.png') no-repeat;
+	background-size: 100%;
+}
+.problem-box .on .list-icon{
+	margin-top: 15rpx;
+	background: url('http://product.joyoung.com/explain/assets/static/images/product/close.png') no-repeat;
+	background-size: 100%;
+}
+.answer-cont{
+	opacity:0;
+	height: 0;
+	padding: 0 60rpx;
+	color:#555;
+	transition: .3s;
+}
+.problem-box .on .list-text{
+	color:#ff6600
+}
+.problem-box .on .answer-cont{
+	opacity:1;
+	height: auto;
+	padding: 20rpx 60rpx 0;
+	transition: .3s;
+}

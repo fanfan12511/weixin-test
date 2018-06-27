@@ -1,0 +1,32 @@
+<import src="../common/title.wxml" />
+
+<view class="line">
+  <template is="title" data="{{name: '亮点',iconImg:'../../../image/icon_title1.png' }}" />
+  <!--亮点内容-->
+  <view class='line-cont'>
+    <block wx:for="{{list02}}">
+      <view class='line-box' wx:if="{{item.imgfloat == 0}}">
+        <view class='box-cont line-img'>
+          <image src='{{item.imgurl}}'></image>
+        </view>
+        <view class='box-cont line-text'>
+          <view class='line-title'>{{item.title}}</view>
+          <view>{{item.cont}}</view>
+          <view class='line-seq seq-{{item.position}}'>{{item.id}}</view>
+        </view>
+      </view>
+      <view class='line-box' wx:elif="{{item.imgfloat == 1}}">
+        <view class='box-cont line-text'>
+          <view class='line-title'>{{item.title}}</view>
+          <view>{{item.cont}}</view>
+          <view class='line-seq seq-{{item.position}}'>{{item.id}}</view>
+        </view>
+        <view class='box-cont line-img'>
+          <image src='{{item.imgurl}}'></image>
+        </view>
+      </view>
+
+    </block>
+
+  </view>
+</view>

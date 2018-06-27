@@ -1,0 +1,25 @@
+<import src="../common/title.wxml" />
+
+<view>
+  <template is="title" data="{{name: '售后服务',iconImg:'../../../image/icon_title1.png'}}" />
+  <!--售后服务内容-->
+  <view class='after-cont'>
+    <view class='service-top'>
+      <image src='../../../image/service1.png' class='service-img'></image>
+      <navigator url='http://kf.joyoung.com' hover-class="navigator-hover">http://kf.joyoung.com</navigator>
+      <view class='service-text'>登陆九阳网络客户服务中心查询</view>
+    </view>
+    <view class='service-midd'>
+      <image src='../../../image/service2.png' class='service-img'></image>
+      <navigator url='tel:400-6188-999' hover-class="navigator-hover">400-6188-999</navigator>
+      <view class='service-text'>拨打九阳阳光服务热线查询</view>
+    </view>
+    <view class='service-bott'>
+      <image src='../../../image/service3.png' class='service-img'></image>
+      <image src='../../../image/qr_code.jpg' class='qr-code-img'></image>
+      <view class='service-text'>关注九阳公众号，进入后点击右下方【我】</view>
+      <view class='service-text'>选择【网点查询】进入查询即可</view>
+    </view>
+  </view>
+
+</view>

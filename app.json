@@ -1,0 +1,42 @@
+{
+  "pages":[
+    "pages/product/index",
+    "pages/manual/manual",
+		"pages/product/pages/list/list",
+    "pages/product/pages/detail/detail",
+    "pages/product/spot/spot",
+    "pages/product/introduction/introduction",
+    "pages/product/guide/guide",
+    "pages/product/clean/clean",
+    "pages/product/problem/problem",
+    "pages/product/aftersale/aftersale"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Joyoung 产品使用说明",
+    "navigationBarTextStyle":"black"
+  },
+	"tabBar": {
+    "position":"bottom",
+		"color": "#8a8a8a",
+		"selectedColor": "#eb6100",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [
+			{
+				"pagePath": "pages/manual/manual",
+				"iconPath": "image/icon-manual.png",
+				"selectedIconPath": "image/icon-manual-on.png",
+				"text": "我的说明书"
+			},
+			{
+				"pagePath": "pages/product/index",
+				"iconPath": "image/icon-product.png",
+				"selectedIconPath": "image/icon-product-on.png",
+				"text": "产品分类"
+			}
+		]
+	},
+	"debug": false
+}

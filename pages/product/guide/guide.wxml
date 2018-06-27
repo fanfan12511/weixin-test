@@ -1,0 +1,41 @@
+<import src="../common/title.wxml" />
+
+<view class='use-guide'>
+  <template is="title" data="{{name: '使用指南',iconImg:'../../../image/icon_title1.png'}}" />
+  <!--使用指南内容-->
+  <view class='guide-cont'>
+    <view class='use-title'>产品配件</view>
+    <image mode="widthFix" src='../../../image/use2.jpg' class='use-img'></image>
+
+    <view class='use-title'>操作界面</view>
+    <image mode="widthFix" src='../../../image/use3.jpg' class='use-img'></image>
+
+    <view class='guide-video'>
+      <!-- <image src='../../image/demonstration.jpg' class='operat-img'></image> -->
+      <video class='use-video' src='http://product.joyoung.com/explain/assets/static/video/product.mp4'></video>
+    </view>
+
+    <view class='pro-tab'>
+      <view class='tab-list'>
+        <block wx:for="{{list03}}">
+          <view id="{{item.id}}" class="{{item.open ? 'on' : '' }}" bindtap='changSwiper'>{{item.name}}</view>
+        </block>
+      </view>
+      <view class='tab-box list03-cont'>
+        <!--烹饪准备 快速入门 使用说明-->
+        <block wx:for="{{list03}}">
+          <view class="tab-cont {{item.open ? 'on' : '' }}">
+            <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" data-code='{{item}}'>
+              <block wx:for="{{item.imgurl}}" wx:for-index="idx" wx:for-item="itemImg">
+                <swiper-item>
+                  <image src='{{itemImg}}' class='slide-image' />
+                </swiper-item>
+              </block>
+            </swiper>
+          </view>
+        </block>
+      </view>
+
+    </view>
+  </view>
+</view>

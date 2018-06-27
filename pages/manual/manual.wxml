@@ -1,0 +1,20 @@
+<view class='my-manual'>
+  <block wx:for="{{manualInfo}}">
+    <navigator id="{{item.id}}" class='product-info' url='{{item.linkUrl}}'>
+      <view class='info-img'>
+        <image src='{{item.productImg}}' mode='widthFix'></image>
+      </view>
+      <view class='info-cont'>
+        <view>{{item.productName}}</view>
+        <view>{{item.productModel}}</view>
+        <view class='product-tag'>
+          <image class='tag-icon' mode='widthFix' src='{{item.platformImg}}'></image>
+          <view class='tag-text'>{{item.platformName}}</view>
+        </view>
+        <view class='info-collect'>
+          <image src='{{item.collectImg}}' mode='widthFix'></image>
+        </view>
+      </view>
+    </navigator>
+  </block>
+</view>

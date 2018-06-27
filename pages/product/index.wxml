@@ -1,0 +1,9 @@
+<view class="product-box">
+		<block wx:for="{{list01}}">
+				<navigator class="product-list" url='pages/list/list?id={{item.id}}' hover-class="navigator-hover">
+						<view class="product-icon"><image src='{{item.imgurl}}'></image></view>
+						<view class="product-text">{{item.name}}</view>
+						<view class="product-arrow"><image src='../../image/right-arrow.png'></image></view>
+				</navigator>
+		</block>
+</view>
